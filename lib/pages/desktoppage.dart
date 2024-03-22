@@ -250,7 +250,7 @@ class DesktopPage extends StatelessWidget {
                           ),
                           SizedBox(
                             width: 30,
-                          ),
+                          ), //SizedBox
                           Flexible(
                             child: Container(
                               height: 300,
