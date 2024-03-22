@@ -597,7 +597,8 @@ class MobilePage extends StatelessWidget {
               title: Text('WORK'),
               onTap: () {
                 // Update the state of the app
-                // ...
+                // betlog
+                //betlog ulit ni ryan
                 // Then close the drawer
                 Navigator.pop(context);
               },
