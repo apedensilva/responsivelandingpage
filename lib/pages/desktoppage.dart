@@ -1,8 +1,5 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:mobilelandingapp/constants/navbar.dart';
 
 class DesktopPage extends StatelessWidget {
@@ -22,10 +19,10 @@ class DesktopPage extends StatelessWidget {
                 height: 800,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('lib/assets/headerbg.png'),
+                      image: const AssetImage('lib/assets/headerbg.png'),
                       fit: BoxFit.fill, //to set background image
                       colorFilter: ColorFilter.mode(
-                          Color.fromARGB(20, 54, 66, 1).withOpacity(0.4),
+                          const Color.fromARGB(20, 54, 66, 1).withOpacity(0.4),
                           BlendMode.dstATop)), //colorfilter for transparency
                 ),
                 child: Stack(
@@ -35,25 +32,25 @@ class DesktopPage extends StatelessWidget {
                       height: 130,
                       child: Row(
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Padding(padding: EdgeInsets.only(left: 120)),
+                          const Padding(padding: EdgeInsets.only(left: 120)),
                           Image.asset(
                             'lib/assets/logo.png',
                             scale: 0.8,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Text(
+                          const Text(
                             'Primates',
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 30,
                                 fontWeight: FontWeight.w900),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 40,
                           ),
                           for (int i = 0; i < navTitles.length; i++)
@@ -61,7 +58,7 @@ class DesktopPage extends StatelessWidget {
                                 onPressed: () {},
                                 child: Text(
                                   navTitles[i],
-                                  style: TextStyle(color: Colors.white),
+                                  style: const TextStyle(color: Colors.white),
                                 ))
                         ],
                       ),
@@ -76,7 +73,7 @@ class DesktopPage extends StatelessWidget {
                               textAlign: TextAlign.center,
                               text: TextSpan(
                                   text: 'THE AGE OF PRIME \nIS HERE ',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 50,
                                       fontWeight: FontWeight.w900,
                                       color: Colors.white),
@@ -88,30 +85,30 @@ class DesktopPage extends StatelessWidget {
                                             fontWeight: FontWeight.w900,
                                             color: Colors.white,
                                             background: Paint()
-                                              ..color = Color.fromRGBO(
+                                              ..color = const Color.fromRGBO(
                                                   236, 154, 41, 1)))
                                   ]),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 40,
                             ),
-                            Text(
+                            const Text(
                               'Lorem ipsum dolor sit amet. Sit dolorum labore qui possimus voluptatibus \n ut aliquam deserunt est porro dolorem sit dolores assumenda eos fugit perferendis qui excepturi sunt.',
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 40,
                             ),
                             TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                    fixedSize: Size(200, 50),
+                                    fixedSize: const Size(200, 50),
                                     alignment: Alignment.center,
                                     backgroundColor:
-                                        Color.fromRGBO(236, 154, 41, 1),
+                                        const Color.fromRGBO(236, 154, 41, 1),
                                     foregroundColor: Colors.white),
-                                child: Text(
+                                child: const Text(
                                   'VIEW OFFERS',
                                 ))
                           ],
@@ -126,16 +123,14 @@ class DesktopPage extends StatelessWidget {
                 color: Colors.grey.shade400,
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 70,
                     ),
-                    Container(
-                      child: Image.asset(
-                        'lib/assets/samplework.png',
-                        scale: 1.3,
-                      ),
+                    Image.asset(
+                      'lib/assets/samplework.png',
+                      scale: 1.3,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 100,
                     ),
                     Expanded(
@@ -144,36 +139,36 @@ class DesktopPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             'BEST WORK 1',
                             style: TextStyle(
                                 fontWeight: FontWeight.w900,
                                 fontSize: 30,
                                 color: Colors.black),
                           ),
-                          Text(
+                          const Text(
                             'TAG LINE 1',
                             style: TextStyle(
                                 fontWeight: FontWeight.w900,
                                 fontSize: 20,
                                 color: Colors.black),
                           ),
-                          Text(
+                          const Text(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nNullam consequat diam nulla,pretium aliquet eros consectetur et.\nMauris ',
                             style: TextStyle(color: Colors.black),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 50,
                           ),
                           TextButton(
                               onPressed: () {},
                               style: TextButton.styleFrom(
-                                  fixedSize: Size(200, 50),
+                                  fixedSize: const Size(200, 50),
                                   alignment: Alignment.center,
                                   backgroundColor:
-                                      Color.fromRGBO(236, 154, 41, 1),
+                                      const Color.fromRGBO(236, 154, 41, 1),
                                   foregroundColor: Colors.white),
-                              child: Text(
+                              child: const Text(
                                 'VIEW MORE',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ))
@@ -189,8 +184,8 @@ class DesktopPage extends StatelessWidget {
                 child: Flexible(
                   child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 30, top: 50),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 30, top: 50),
                         child: Row(
                           children: [
                             Positioned(
@@ -202,7 +197,7 @@ class DesktopPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Positioned(
@@ -221,34 +216,34 @@ class DesktopPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
                                     Image.asset(
                                       'lib/assets/icon1.png',
                                       scale: 1.3,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 25,
                                     ),
-                                    Text(
+                                    const Text(
                                       'NUMBER 1',
                                       style: TextStyle(
                                           fontSize: 25,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w900),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    const Text(
                                         'Aut corrupti nemo ex laborum sunt ut rerum commodi qui ipsa dolorum. Est dolores voluptatibus eum nihil dolorum eos modi quisquam.'),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ), //SizedBox
                           Flexible(
@@ -262,34 +257,34 @@ class DesktopPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
                                     Image.asset(
                                       'lib/assets/icon2.png',
                                       scale: 1.3,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 25,
                                     ),
-                                    Text(
+                                    const Text(
                                       'NUMBER 2',
                                       style: TextStyle(
                                           fontSize: 25,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w900),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    const Text(
                                         'Aut corrupti nemo ex laborum sunt ut rerum commodi qui ipsa dolorum. Est dolores voluptatibus eum nihil dolorum eos modi quisquam.'),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           Flexible(
@@ -303,39 +298,39 @@ class DesktopPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
                                     Image.asset(
                                       'lib/assets/icon3.png',
                                       scale: 1.3,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 25,
                                     ),
-                                    Text(
+                                    const Text(
                                       'NUMBER 3',
                                       style: TextStyle(
                                           fontSize: 25,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w900),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    const Text(
                                         'Aut corrupti nemo ex laborum sunt ut rerum commodi qui ipsa dolorum. Est dolores voluptatibus eum nihil dolorum eos modi quisquam.'),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           )
                         ],
                       )),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
                       Positioned(
@@ -354,34 +349,34 @@ class DesktopPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
                                     Image.asset(
                                       'lib/assets/icon1.png',
                                       scale: 1.3,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 25,
                                     ),
-                                    Text(
+                                    const Text(
                                       'NUMBER 4',
                                       style: TextStyle(
                                           fontSize: 25,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w900),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    const Text(
                                         'Aut corrupti nemo ex laborum sunt ut rerum commodi qui ipsa dolorum. Est dolores voluptatibus eum nihil dolorum eos modi quisquam.'),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           Flexible(
@@ -395,34 +390,34 @@ class DesktopPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
                                     Image.asset(
                                       'lib/assets/icon2.png',
                                       scale: 1.3,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 25,
                                     ),
-                                    Text(
+                                    const Text(
                                       'NUMBER 5',
                                       style: TextStyle(
                                           fontSize: 25,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w900),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    const Text(
                                         'Aut corrupti nemo ex laborum sunt ut rerum commodi qui ipsa dolorum. Est dolores voluptatibus eum nihil dolorum eos modi quisquam.'),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           Flexible(
@@ -436,34 +431,34 @@ class DesktopPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
                                     Image.asset(
                                       'lib/assets/icon3.png',
                                       scale: 1.3,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 25,
                                     ),
-                                    Text(
+                                    const Text(
                                       'NUMBER 6',
                                       style: TextStyle(
                                           fontSize: 25,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w900),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    const Text(
                                         'Aut corrupti nemo ex laborum sunt ut rerum commodi qui ipsa dolorum. Est dolores voluptatibus eum nihil dolorum eos modi quisquam.'),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           )
                         ],
@@ -474,38 +469,38 @@ class DesktopPage extends StatelessWidget {
               ),
               Container(
                 height: 800,
-                color: Color.fromRGBO(20, 54, 66, 1),
+                color: const Color.fromRGBO(20, 54, 66, 1),
                 child: Center(
                   child: Container(
                     height: 600,
                     width: 800,
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.white, width: 5),
-                        color: Color.fromRGBO(34, 34, 34, 1)),
+                        color: const Color.fromRGBO(34, 34, 34, 1)),
                     child: Column(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
-                        Text(
+                        const Text(
                           'REACH OUT TO US!!!',
                           style: TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.w900,
                               color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           'SUB TAG LINE!!!',
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w900,
                               color: Colors.white),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
+                        const Padding(
+                          padding: EdgeInsets.only(
                             left: 12,
                             top: 8,
                           ),
@@ -528,17 +523,18 @@ class DesktopPage extends StatelessWidget {
                           child: TextField(
                             decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color.fromRGBO(68, 68, 68, 1),
-                                contentPadding: EdgeInsets.all(10),
+                                fillColor: const Color.fromRGBO(68, 68, 68, 1),
+                                contentPadding: const EdgeInsets.all(10),
                                 enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30),
-                                    borderSide:
-                                        BorderSide(color: Colors.black45))),
-                            style: TextStyle(fontSize: 15, color: Colors.white),
+                                    borderSide: const BorderSide(
+                                        color: Colors.black45))),
+                            style: const TextStyle(
+                                fontSize: 15, color: Colors.white),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
+                        const Padding(
+                          padding: EdgeInsets.only(
                             left: 12,
                             top: 8,
                           ),
@@ -561,17 +557,18 @@ class DesktopPage extends StatelessWidget {
                           child: TextField(
                             decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color.fromRGBO(68, 68, 68, 1),
-                                contentPadding: EdgeInsets.all(10),
+                                fillColor: const Color.fromRGBO(68, 68, 68, 1),
+                                contentPadding: const EdgeInsets.all(10),
                                 enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30),
-                                    borderSide:
-                                        BorderSide(color: Colors.black45))),
-                            style: TextStyle(fontSize: 15, color: Colors.white),
+                                    borderSide: const BorderSide(
+                                        color: Colors.black45))),
+                            style: const TextStyle(
+                                fontSize: 15, color: Colors.white),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
+                        const Padding(
+                          padding: EdgeInsets.only(
                             left: 12,
                             top: 8,
                           ),
@@ -594,17 +591,18 @@ class DesktopPage extends StatelessWidget {
                           child: TextField(
                             decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color.fromRGBO(68, 68, 68, 1),
-                                contentPadding: EdgeInsets.all(10),
+                                fillColor: const Color.fromRGBO(68, 68, 68, 1),
+                                contentPadding: const EdgeInsets.all(10),
                                 enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30),
-                                    borderSide:
-                                        BorderSide(color: Colors.black45))),
-                            style: TextStyle(fontSize: 15, color: Colors.white),
+                                    borderSide: const BorderSide(
+                                        color: Colors.black45))),
+                            style: const TextStyle(
+                                fontSize: 15, color: Colors.white),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
+                        const Padding(
+                          padding: EdgeInsets.only(
                             left: 12,
                             top: 8,
                           ),
@@ -628,30 +626,31 @@ class DesktopPage extends StatelessWidget {
                             maxLines: 3,
                             decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color.fromRGBO(68, 68, 68, 1),
-                                contentPadding: EdgeInsets.all(10),
+                                fillColor: const Color.fromRGBO(68, 68, 68, 1),
+                                contentPadding: const EdgeInsets.all(10),
                                 enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30),
-                                    borderSide:
-                                        BorderSide(color: Colors.black45))),
-                            style: TextStyle(fontSize: 15, color: Colors.white),
+                                    borderSide: const BorderSide(
+                                        color: Colors.black45))),
+                            style: const TextStyle(
+                                fontSize: 15, color: Colors.white),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         TextButton(
                             onPressed: () {},
                             style: TextButton.styleFrom(
-                                fixedSize: Size(150, 30),
+                                fixedSize: const Size(150, 30),
                                 alignment: Alignment.center,
                                 backgroundColor:
-                                    Color.fromRGBO(236, 154, 41, 1),
+                                    const Color.fromRGBO(236, 154, 41, 1),
                                 foregroundColor: Colors.white),
-                            child: Text(
+                            child: const Text(
                               'SEND MESSAGE',
                               style: TextStyle(fontWeight: FontWeight.bold),
-                            ))
+                            )),
                       ],
                     ),
                   ),
@@ -659,11 +658,11 @@ class DesktopPage extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                color: Color.fromRGBO(34, 34, 34, 1),
+                color: const Color.fromRGBO(34, 34, 34, 1),
                 child: Center(
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Flexible(
@@ -675,23 +674,23 @@ class DesktopPage extends StatelessWidget {
                               'lib/assets/soc1.png',
                               scale: 1.5,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Image.asset('lib/assets/soc2.png', scale: 1.5),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Image.asset('lib/assets/soc3.png', scale: 1.5),
                           ],
                         ),
                       ),
-                      Flexible(
+                      const Flexible(
                           child: Text(
                         '______________________________',
                         style: TextStyle(color: Colors.white),
                       )),
-                      Flexible(
+                      const Flexible(
                           child: Text(
                         '© All Rights Reserved 2024',
                         style: TextStyle(color: Colors.white),
@@ -707,4 +706,3 @@ class DesktopPage extends StatelessWidget {
     );
   }
 }
-//tang ina mo dennis
